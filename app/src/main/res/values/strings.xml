@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Template app</string>
+
+
+    <!--
+        BUTTONS
+    -->
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+
+
+    <!--
+        HOME
+    -->
+    <string name="home_title">Home</string>
+
+
+    <!--
+        CONTENT
+    -->
+    <string name="content_title">Content</string>
+
+
+    <!--
+        SETTINGS
+    -->
+    <string name="settings_title">Settings</string>
+
+
+    <!--
+        DESIGNSYSTEM
+    -->
+    <string name="design_system_title">Design System</string>
+</resources>

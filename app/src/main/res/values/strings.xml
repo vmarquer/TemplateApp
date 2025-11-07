@@ -7,6 +7,7 @@
     -->
     <string name="button_yes">Yes</string>
     <string name="button_no">No</string>
+    <string name="button_close">Close</string>
 
 
     <!--
@@ -31,4 +32,10 @@
         DESIGNSYSTEM
     -->
     <string name="design_system_title">Design System</string>
+    <string name="design_system_step_1">Step 1</string>
+    <string name="design_system_step_2">Step 2</string>
+    <string name="design_system_step_3">Step 3</string>
+    <string name="design_system_option_1">Option 1</string>
+    <string name="design_system_option_2">Option 2</string>
+    <string name="design_system_option_3">Option 3</string>
 </resources>

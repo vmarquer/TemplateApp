@@ -1,5 +1,6 @@
 package com.example.templateapp.ui.screens.settings
 
+import ButtonPrimary
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -36,6 +37,11 @@ fun Settings(
             verticalArrangement = Arrangement.Center
         ) {
             TextH1Bold(textId = R.string.settings_title)
+            ButtonPrimary(
+                modifier = Modifier,
+                textId = R.string.design_system_title,
+                onClick = goDesignSystem
+            )
         }
     }
 }

@@ -9,8 +9,11 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.example.templateapp.designsystem.componentsGallery.DesignSystemButtons
+import com.example.templateapp.designsystem.componentsGallery.DesignSystemCards
 import com.example.templateapp.designsystem.componentsGallery.DesignSystemColors
+import com.example.templateapp.designsystem.componentsGallery.DesignSystemInputs
 import com.example.templateapp.designsystem.componentsGallery.DesignSystemLabels
+import com.example.templateapp.designsystem.componentsGallery.DesignSystemOthers
 import com.example.templateapp.ui.theme.padding16
 import com.example.templateapp.ui.theme.spacing16
 
@@ -27,6 +30,9 @@ fun DesignSystem(
     ) {
         DesignSystemButtons()
         DesignSystemLabels()
+        DesignSystemInputs()
         DesignSystemColors()
+        DesignSystemCards()
+        DesignSystemOthers()
     }
 }

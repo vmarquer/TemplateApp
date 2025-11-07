@@ -1,6 +1,5 @@
 package com.example.templateapp.ui
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsPressedAsState
@@ -9,8 +8,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.pager.HorizontalPager
-import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -25,11 +22,9 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.Stable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
@@ -41,9 +36,6 @@ import androidx.navigation.compose.rememberNavController
 import com.example.templateapp.navigation.NavigationHost
 import com.example.templateapp.navigation.Route
 import com.example.templateapp.navigation.navigateToTopLevelDestination
-import com.example.templateapp.ui.screens.content.Content
-import com.example.templateapp.ui.screens.home.Home
-import com.example.templateapp.ui.screens.settings.Settings
 import com.example.templateapp.ui.screens.toast.GlobalToast
 import com.example.templateapp.ui.theme.black
 import com.example.templateapp.ui.theme.components.TextBottomBar
@@ -52,7 +44,6 @@ import com.example.templateapp.ui.theme.iconMediumSize
 import com.example.templateapp.ui.theme.padding6
 import com.example.templateapp.ui.theme.primary
 import com.example.templateapp.ui.theme.white
-import kotlinx.coroutines.launch
 
 @Composable
 fun App(
@@ -166,7 +157,6 @@ fun BottomBar(
                             icon = {
                                 Icon(
                                     imageVector = destination.iconId,
-                                    // painter = painterResource(id = destination.iconId),
                                     contentDescription = null,
                                     modifier = modifier.size(iconMediumSize)
                                 )
